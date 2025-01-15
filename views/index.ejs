@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open-Meteo Weather Fetcher 0.1</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    <div id="container">
+        <div class="card">
+            <h1>Todays weather expectation for Amsterdam</h1>
+            <i><%= forecast.daily.time %></i>
+            <table>
+                <tr>
+                    <td>Daylight duration (hours)</td>
+                    <td><%= forecast.daily.daylight_duration/60/60 %></td>
+                </tr>
+                <tr>
+                    <td>UW Index</td>
+                    <td><%= forecast.daily.uv_index_max %></td>
+                </tr>
+                <tr>
+                    <td>Rain sum</td>
+                    <td><%= forecast.daily.rain_sum %></td>
+                </tr>
+
+                <tr>
+                    <td>Weather code</td>
+                    <td><%= forecast.daily.weather_code %></td>
+                </tr>
+                <tr>
+                    <td>Sunrise</td>
+                    <td><%= forecast.daily.sunrise %></td>
+                </tr>
+                <tr>
+                    <td>Sunset</td>
+                    <td><%= forecast.daily.sunset %></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</body>
+</html>
