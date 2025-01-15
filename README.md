@@ -15,12 +15,15 @@ VSCode project setup:
 4. vi packages.json add "type": "module"
 5. npm i express ejs axios
 
-Git setup:
+Git setup and push:
 1. Create new Repository at GitHub
 2. git init
-3. git commit -m "Project init"
+3. git commit -m "Initial project commit"
 4. git add .
-4. git remote add origin https://github.com/[username]/[reponame].git
+5. git remote add origin https://github.com/[username]/[reponame].git
+6. git push -u origin master
+
+
 
 
 
